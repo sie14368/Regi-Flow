@@ -1,8 +1,4 @@
-# ============================================================
 # RegiFlow - Candidate Registration System
-# Developed using Python, Tkinter & OpenPyXL
-# ============================================================
-
 from tkinter import *
 from tkinter import ttk, messagebox
 import openpyxl
@@ -10,9 +6,7 @@ import os
 import re
 from datetime import datetime
 
-# ============================================================
 # Application Window
-# ============================================================
 
 root = Tk()
 root.title("RegiFlow - Candidate Registration System")
@@ -22,16 +16,12 @@ root.resizable(False, False)
 frame = Frame(root)
 frame.pack(padx=10, pady=10)
 
-# ============================================================
 # Variables
-# ============================================================
 
 terms_var = BooleanVar()
 disability_var = StringVar(value="No")
 
-# ============================================================
 # Personal Information
-# ============================================================
 
 personal_info_frame = LabelFrame(
     frame,
@@ -123,9 +113,7 @@ Radiobutton(
 for widget in personal_info_frame.winfo_children():
     widget.grid_configure(padx=20, pady=5)
 
-# ============================================================
 # Contact Details
-# ============================================================
 
 contact_info_frame = LabelFrame(
     frame,
@@ -161,9 +149,7 @@ pin_code_entry.grid(row=3, column=2)
 for widget in contact_info_frame.winfo_children():
     widget.grid_configure(padx=20, pady=5)
 
-# ============================================================
 # Educational Information
-# ============================================================
 
 educational_info_frame = LabelFrame(
     frame,
@@ -220,9 +206,7 @@ course_combobox.grid(row=1, column=2)
 for widget in educational_info_frame.winfo_children():
     widget.grid_configure(padx=20, pady=5)
 
-# ============================================================
 # Terms & Conditions
-# ============================================================
 
 terms_frame = LabelFrame(
     frame,
@@ -236,9 +220,7 @@ Checkbutton(
     text="I agree to the Terms & Conditions.",
     variable=terms_var
 ).grid(row=0, column=0, padx=10, pady=5, sticky="w")
-# ============================================================
 # Helper Functions
-# ============================================================
 
 FILE_PATH = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -440,9 +422,7 @@ def validate_form():
 
     return True
 
-# ============================================================
 # Submit Form
-# ============================================================
 
 def submit_form():
 
@@ -506,9 +486,7 @@ def submit_form():
     clear_form()
 
 
-# ============================================================
 # Submit Button
-# ============================================================
 
 submit_button = Button(
     frame,
