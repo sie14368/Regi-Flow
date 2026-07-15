@@ -33,7 +33,3 @@ RegiFlow is a desktop-based Candidate Registration System built using Python and
    python regiflow.py
    ```
 4. Fill in the registration form and submit to save the data.
-
----
-
-**Developer:** Homagni Paul
