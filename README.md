@@ -20,12 +20,15 @@ RegiFlow is a simple Candidate Registration System developed using Python, Tkint
 * Tkinter
 * OpenPyXL
 
-Project Structure
+## Project Structure
+
+```
 RegiFlow/
 │
 ├── main.py
 ├── data.xlsx
 └── README.md
+```
 
 ## How to Run
 
