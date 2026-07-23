@@ -14,16 +14,12 @@ root.resizable(False, False)
 
 # Excel File
 
-
 FILE_NAME = "data.xlsx"
-
 
 # Form Frame
 
-
 frame = Frame(root, padx=20, pady=20)
 frame.pack()
-
 
 # Candidate Information
 
@@ -100,10 +96,7 @@ def create_excel():
     workbook.save(FILE_NAME)
     workbook.close()
 
-
-
 # Validate Form
-
 
 def validate():
 
@@ -141,7 +134,6 @@ def validate():
         messagebox.showerror("Error", "Select course.")
         return False
 
-
     # Email Validation
 
     email = email_entry.get().strip()
@@ -166,9 +158,7 @@ def validate():
 
     return True
 
-
 # Clear Form
-
 
 def clear_form():
     name_entry.delete(0, END)
@@ -184,10 +174,7 @@ def clear_form():
 
     course_combo.set("")
 
-
-
 # Submit Form
-
 
 def submit():
 
@@ -220,10 +207,7 @@ def submit():
 
     clear_form()
 
-
-
 # Submit Button
-
 
 submit_button = Button(
     frame,
